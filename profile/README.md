@@ -21,6 +21,11 @@ brickadia-community is a collection of libraries and tools developed by the comm
 * [brs.world](https://github.com/brickadia-community/brs.world), a save preview website
 * [img2brs](https://github.com/brickadia-community/img2brs), a site to convert images to save files
 
+#### Guides
+
+* [brickadia-vr](https://github.com/brickadia-community/brickadia-vr), instructions for using Unreal Engine VR with Brickadia models
+* [portforward](https://github.com/brickadia-community/portforward) ([link](https://portforward.brickadia.dev/)), troubleshooting instructions for port-forwarding Brickadia servers
+
 #### Save libraries
 
 * [brs-java](https://github.com/brickadia-community/brs-java), a BRS save reader/writer for Java
