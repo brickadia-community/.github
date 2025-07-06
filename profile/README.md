@@ -34,3 +34,4 @@ brickadia-community is a collection of libraries and tools developed by the comm
 * [brs-js](https://github.com/brickadia-community/brs-js), a BRS save reader/writer for JavaScript
 * [brs-cpp](https://github.com/brickadia-community/brs-cpp), a BRS save reader/writer for C++
 * [brs-cr](https://github.com/brickadia-community/brs-cr), a BRS save reader/writer for Crystal
+* [brdb](https://github.com/brickadia-community/brdb), a BRDB worlds read/writer for Rust
