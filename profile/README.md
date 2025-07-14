@@ -23,6 +23,7 @@ brickadia-community is a collection of libraries and tools developed by the comm
 
 #### Guides
 
+* [Brickadia Community Wiki](https://brickadia-community.github.io/communitywiki/), a community wiki that anyone can submit information, guides, tutorials or other information to. 
 * [brickadia-vr](https://github.com/brickadia-community/brickadia-vr), instructions for using Unreal Engine VR with Brickadia models
 * [portforward](https://github.com/brickadia-community/portforward) ([link](https://portforward.brickadia.dev/)), troubleshooting instructions for port-forwarding Brickadia servers
 
