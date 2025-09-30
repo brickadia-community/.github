@@ -12,7 +12,7 @@ brickadia-community is a collection of libraries and tools developed by the comm
 #### Tools
 
 * [BrickCartographer](https://github.com/brickadia-community/BrickCartographer), a site to view BRS maps
-* [heightmap2brs](https://github.com/brickadia-community/heightmap2brs), a generator that constructs saves from heightmaps/colormaps
+* [heightmap2brz](https://github.com/brickadia-community/heightmap2brz) (works as img2brz), a generator that constructs saves from heightmaps/colormaps
 * [mc2brs](https://github.com/brickadia-community/mc2brs), a generator that converts Minecraft savefiles to BRS files
 * [BrickadiaAutoPainter](https://github.com/brickadia-community/BrickadiaAutoPainter), a robot tool that automatically paints images for you in-game
 * [palette](https://github.com/brickadia-community/palette), a site to create, convert, and import Brickadia color palettes
