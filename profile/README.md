@@ -24,6 +24,7 @@ brickadia-community is a collection of libraries and tools developed by the comm
 * [img2brs](https://github.com/brickadia-community/img2brs), a site to convert images to save files
 * [brs2brz](https://brs2brz.kmschr.com/), a site to convert BRS to BRZ files without opening the game
 * [wirescript](https://github.com/Meshiest/wirescript), a tool that compiles code to logic gates
+* [bls2brz](https://bls2brz.kmschr.com/), a site to convert Blockland saves (BLS) to BRZ ([repo](https://github.com/brickadia-community/bls2brz))
 
 #### Guides
 
