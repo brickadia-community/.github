@@ -1,0 +1,307 @@
+/* The omegga web UI's look: its palette, Glacial Indifference, bold
+ * uppercase panel headers on the footer navy, 12px panels with alternating
+ * rows, pill buttons, and the blurred night-sky background. */
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('assets/fonts/GlacialIndifferenceRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('assets/fonts/GlacialIndifferenceBold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --bg-primary: #1b2f4a;
+  --bg-secondary: #131d30;
+  --bg-secondary-alt: #111a2b;
+  --bg-footer: #091021;
+  --boring-fg: #a7bbce;
+  --button-fg: #ffffff;
+  --element-fg: #5e7190;
+  --element-pressed: #263f61;
+  --main-normal: #5da93d;
+  --main-hover: #8dc377;
+  --main-pressed: #41772b;
+  --info-normal: #009bee;
+  --info-hover: #4cb9f3;
+  --info-pressed: #007da7;
+  --warn-normal: #ffa10b;
+  --element-normal: #455a7e;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-secondary);
+  scrollbar-color: #224c7b var(--bg-footer);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--boring-fg);
+  font-family: 'Glacial Indifference', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 0 16px;
+}
+
+a {
+  color: var(--info-hover);
+}
+
+.background {
+  position: fixed;
+  inset: -40px;
+  z-index: -1;
+  background: url('assets/img/dark_bg.webp') 50% 50% / cover no-repeat;
+  filter: blur(20px) brightness(0.8);
+}
+
+/* Header */
+
+.hero {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 56px 0 32px;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 128px;
+  height: 128px;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
+}
+
+.hero h1 {
+  margin: 12px 0 10px;
+  color: #ffffff;
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  /* A thick black outline, like the logo's: the stroke is centred on the
+   * glyph edge, so it is twice the visible width and painted under the fill
+   * to keep the letters their full weight. */
+  -webkit-text-stroke: 0.22em #000000;
+  paint-order: stroke fill;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+  margin: 0 0 24px;
+  font-size: 20px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 16px;
+  color: var(--button-fg);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:active {
+  padding-top: 4px;
+}
+
+.button.info {
+  background: var(--info-normal);
+}
+.button.info:hover {
+  background: var(--info-hover);
+}
+.button.info:active {
+  background: var(--info-pressed);
+}
+
+.button.main {
+  background: var(--main-normal);
+}
+.button.main:hover {
+  background: var(--main-hover);
+}
+.button.main:active {
+  background: var(--main-pressed);
+}
+
+.button.normal {
+  background: var(--element-normal);
+  color: var(--boring-fg);
+}
+.button.normal:hover {
+  background: var(--element-fg);
+}
+.button.normal:active {
+  background: var(--element-pressed);
+}
+
+/* Panels */
+
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.panel-header {
+  margin: 0;
+  padding: 10px 20px;
+  background: var(--bg-footer);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rows-label {
+  margin: 0;
+  padding: 8px 20px;
+  background: var(--bg-primary);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.note {
+  margin: 0;
+  padding: 10px 20px;
+  border-left: 4px solid var(--warn-normal);
+  background: rgba(255, 161, 11, 0.08);
+  font-size: 16px;
+}
+
+.note a {
+  color: var(--warn-normal);
+}
+
+code {
+  padding: 0 4px;
+  border-radius: 4px;
+  background: var(--element-pressed);
+  color: var(--info-hover);
+  font-size: 0.9em;
+}
+
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rows li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+  background: var(--bg-secondary);
+}
+
+.rows li:nth-child(even) {
+  background: var(--bg-secondary-alt);
+}
+
+.row-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.row-text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.row-text p a {
+  color: var(--info-hover);
+}
+
+.name-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* A fact about the project (`BRS`, `Archived`), not a link. */
+.tag {
+  padding: 0 8px;
+  border: 1px solid var(--element-normal);
+  border-radius: var(--radius-sm);
+  color: var(--element-fg);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.row-links {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.button.small {
+  height: 28px;
+  padding: 0 14px;
+  font-size: 16px;
+}
+
+footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 0 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .rows li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .row-links {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brickadia Community</title>
+    <meta
+      name="description"
+      content="Libraries, tools and guides made by the community of the game Brickadia: server wrappers, save converters, save libraries and more."
+    />
+    <meta name="theme-color" content="#091021" />
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true"></div>
+
+    <header class="hero">
+      <img class="hero-logo" src="assets/img/logo.png" alt="" width="128" height="128" />
+      <h1>Brickadia Community</h1>
+      <p class="tagline">
+        Libraries, tools and guides made by the community of
+        <a href="https://brickadia.com/">Brickadia</a>.
+      </p>
+      <nav class="hero-links" aria-label="Community links">
+        <a class="button info" href="https://github.com/brickadia-community">GitHub</a>
+        <a class="button main" href="https://brickadia-community.github.io/communitywiki/">Community Wiki</a>
+        <a class="button normal" href="https://brickadia.com/">Brickadia</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel" aria-labelledby="servers">
+        <h2 class="panel-header" id="servers">Server wrappers</h2>
+        <ul class="rows" data-list="servers">
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">omegga</span></div>
+              <p>The number-one choice for server management, plugins and automation.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://omegga.brickadia.dev/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/omegga">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brixide</span></div>
+              <p>An experimental server wrapper for the Brickadia Alpha, written in Rust.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brixide">Repo</a></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" aria-labelledby="tools">
+        <h2 class="panel-header" id="tools">Tools</h2>
+        <p class="note">
+          Brickadia EA3 removed support for the BRS format. To load BRS saves,
+          switch Brickadia to its <code>archive-ea2</code> branch on Steam, or
+          upgrade them to BRZ with <a href="https://brs2brz.kmschr.com/">brs2brz</a>.
+        </p>
+        <ul class="rows" data-list="tools">
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">wirescript</span></div>
+              <p>A language that compiles code to Brickadia's logic gates.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://wirescript.brickadia.dev/">Site</a><a class="button small normal" href="https://wirescript.brickadia.dev/docs/">Docs</a><a class="button small normal" href="https://github.com/Meshiest/wirescript">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">BrickCartographer</span></div>
+              <p>View BRS, BRDB and BRZ maps.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://kmschr.com/brickcartographer/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/BrickCartographer">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">heightmap2brz</span></div>
+              <p>Builds saves from heightmaps and colormaps. Also works as img2brz and img2text.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://heightmap.brickadia.dev/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/heightmap2brz">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs2brz</span></div>
+              <p>Converts BRS saves to BRZ without opening the game.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://brs2brz.kmschr.com/">Site</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">bls2brz</span></div>
+              <p>Converts Blockland saves (BLS) to BRZ.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://bls2brz.kmschr.com/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/bls2brz">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">palette</span></div>
+              <p>Create, convert and import Brickadia color palettes.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://palette.brickadia.dev/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/palette">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">BrickadiaAutoPainter</span></div>
+              <p>A robot that paints images for you in game.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/BrickadiaAutoPainter">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs.world</span></div>
+              <p>A save preview website.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brs.world">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">mc2brs</span><span class="tag">BRS</span></div>
+              <p>Converts Minecraft worlds to BRS saves.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/mc2brs">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">rbxl-brs</span><span class="tag">BRS</span><span class="tag">Archived</span></div>
+              <p>Converts Roblox saves (RBXLX) to BRS.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/rbxl-brs">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">textured-voxelizer</span><span class="tag">BRS</span></div>
+              <p>Voxelizes OBJ models into BRS saves. For BRZ, see <a href="https://github.com/Kmschr/obj2brz">obj2brz</a>.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/textured-voxelizer">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">img2brs</span><span class="tag">BRS</span></div>
+              <p>Converts images to saves.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/img2brs">Repo</a></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" aria-labelledby="guides">
+        <h2 class="panel-header" id="guides">Guides</h2>
+        <ul class="rows" data-list="guides">
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">Brickadia Community Wiki</span></div>
+              <p>A wiki anyone can add information, guides and tutorials to.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://brickadia-community.github.io/communitywiki/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/communitywiki">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">portforward</span></div>
+              <p>Troubleshooting port forwarding for Brickadia servers.</p>
+            </div>
+            <div class="row-links"><a class="button small info" href="https://portforward.brickadia.dev/">Site</a><a class="button small normal" href="https://github.com/brickadia-community/portforward">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brickadia-vr</span></div>
+              <p>Using Unreal Engine VR with Brickadia models.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brickadia-vr">Repo</a></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" aria-labelledby="libraries">
+        <h2 class="panel-header" id="libraries">Save libraries</h2>
+        <h3 class="rows-label">BRDB and BRZ</h3>
+        <ul class="rows" data-list="libraries-brz">
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brdb</span></div>
+              <p>A BRDB and BRZ reader and writer for Rust.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://docs.rs/brdb">Docs</a><a class="button small normal" href="https://github.com/brickadia-community/brdb">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs-js</span></div>
+              <p>A BRS, BRDB and BRZ reader and writer for JavaScript and TypeScript.</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://www.npmjs.com/package/brs-js">npm</a><a class="button small normal" href="https://github.com/brickadia-community/brs-js">Repo</a></div>
+          </li>
+        </ul>
+        <h3 class="rows-label">BRS only</h3>
+        <ul class="rows" data-list="libraries-brs">
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brickadia-rs</span></div>
+              <p>Rust</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brickadia-rs">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs-py</span></div>
+              <p>Python</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brs-py">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs-java</span></div>
+              <p>Java</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brs-java">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs-cpp</span></div>
+              <p>C++</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brs-cpp">Repo</a></div>
+          </li>
+          <li>
+            <div class="row-text">
+              <div class="name-line"><span class="name">brs-cr</span></div>
+              <p>Crystal</p>
+            </div>
+            <div class="row-links"><a class="button small normal" href="https://github.com/brickadia-community/brs-cr">Repo</a></div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Made by the Brickadia community. Not affiliated with Brickadia.
+      <a href="https://github.com/brickadia-community/.github">Edit this page</a>.
+    </footer>
+  </body>
+</html>
