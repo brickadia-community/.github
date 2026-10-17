@@ -7,7 +7,6 @@ brickadia-community is a collection of libraries and tools developed by the comm
 #### Server wrappers
 
 * [omegga](https://github.com/brickadia-community/omegga), the number-one choice for server management, plugins, and automation
-* [brixide](https://github.com/brickadia-community/brixide), an experimental server wrapper for the Brickadia Alpha written in Rust
 
 #### Tools
 
